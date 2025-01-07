@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.local
+pluginId.txt
+.npmrc
+plugin.zip
+private.ppk
