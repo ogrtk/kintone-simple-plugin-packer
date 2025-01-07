@@ -1,10 +1,10 @@
 {
   "name": "@ogrtk/kintone-simple-plugin-packer",
   "description": "Packs kintone plugin",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "type": "module",
   "bin": {
-    "kintone-api-plugin-uploader": "./dist/cli.js"
+    "kintone-simple-plugin-packer": "dist/cli.js"
   },
   "files": ["dist", "README.md"],
   "scripts": {
