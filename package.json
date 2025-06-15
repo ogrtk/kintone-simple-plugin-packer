@@ -1,12 +1,15 @@
 {
   "name": "@ogrtk/kintone-simple-plugin-packer",
   "description": "Packs kintone plugin",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "type": "module",
   "bin": {
     "kintone-simple-plugin-packer": "dist/cli.js"
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "check": "biome check . --write",
     "build": "npm run check && tsc --noEmit && tsx esbuild.config.ts",
