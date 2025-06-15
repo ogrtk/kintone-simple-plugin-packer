@@ -78,6 +78,12 @@ const zipDirectoryToBuffer = (dirPath: string): Buffer => {
 const { input, ppk, output } = getParams();
 
 try {
+  // create output directory
+  const outputDir = path.dirname(output);
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
+
   // Upload plugin file
   console.log("Creating zip archive...");
 
