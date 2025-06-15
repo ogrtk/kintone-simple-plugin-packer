@@ -8,7 +8,7 @@
   },
   "files": ["dist", "README.md"],
   "scripts": {
-    "check": "biome check",
+    "check": "biome check . --write",
     "build": "npm run check && tsc --noEmit && tsx esbuild.config.ts",
     "test:ts": "tsx ./src/cli.ts -i testdata -o plugin.zip --ppk private.ppk",
     "test": "node ./dist/cli.js -i testdata -o plugin.zip --ppk private.ppk"

@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["./dist/cli.js", "testdata"]
+    "ignore": ["./dist/cli.js", "testdata", ".devcontainer"]
   },
   "formatter": {
     "enabled": true,

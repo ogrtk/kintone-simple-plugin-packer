@@ -1,14 +1,13 @@
 {
   "name": "Debian",
-  "dockerComposeFile": ["./docker-compose.yml"],
+  "dockerComposeFile": [
+    "./docker-compose.yml"
+  ],
   "service": "dev",
   "mounts": [
     "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind,consistency=delegated"
   ],
   "workspaceFolder": "${localWorkspaceFolder}",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/typescript:2": {}
-  },
   "customizations": {
     "vscode": {
       "extensions": [
