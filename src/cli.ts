@@ -104,6 +104,13 @@ try {
     console.log("Packaging new...");
     packer(buf).then((out) => {
       console.log(out.id);
+
+      // create ppk output directory(when not exist)
+      const ppkOutputDir = path.dirname(ppk);
+      if (!fs.existsSync(ppkOutputDir)) {
+        fs.mkdirSync(ppkOutputDir, { recursive: true });
+      }
+
       fs.writeFileSync(ppk, out.privateKey);
       fs.writeFileSync(output, out.plugin);
     });

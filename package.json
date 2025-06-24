@@ -6,10 +6,7 @@
   "bin": {
     "kintone-simple-plugin-packer": "dist/cli.js"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "scripts": {
     "check": "biome check . --write",
     "build": "npm run check && tsc --noEmit && tsx esbuild.config.ts",
